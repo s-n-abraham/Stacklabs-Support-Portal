@@ -1,0 +1,43 @@
+.support-form-wrapper {
+    background: url('/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+
+  /* Apply font to all children */
+  font-family: Helvetica, Arial, sans-serif !important;
+  color: #111111 !important;
+  }
+
+  .support-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+  
+  .support-card .card-title {
+    margin-top: -2.5rem; 
+    margin-left: -3rem;
+    padding-bottom: 30px;
+  }
+
+  .btn-customGreen {
+    background-color: #86EE02;
+    color: #111111;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .btn-customGreen:hover {
+    background-color: #74d600;
+    color: #111111;
+  }
+
+
+  
