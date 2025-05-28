@@ -26,7 +26,6 @@ exports.handler = async (event) => {
 
   let commandOutput = '';
 
-
   if (data?.traceId && typeof data.issueDetails === 'string') {
     try {
       commandOutput = execSync(`echo "${data.issueDetails}"`).toString().trim();
@@ -73,7 +72,8 @@ exports.handler = async (event) => {
       },
       body: JSON.stringify({
         message: 'Request saved successfully',
-        debug: commandOutput 
+        debug: commandOutput,
+        portalUrl: 'http://support-portal-stacklabs.s3-website-us-east-1.amazonaws.com/'
       }),
     };
   } catch (err) {
